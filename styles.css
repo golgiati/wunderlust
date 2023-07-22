@@ -77,7 +77,8 @@ table {
 body {
 	display: grid;
     grid-template-columns: 1fr;
-    max-width: 450px;
+    /*max-width: 450px;*/
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -198,7 +199,8 @@ nav li a {
     color: var(--black);
     font-weight: bold;
     border: 1px solid var(--dark-gray);
-    width: 449px;
+    /*width: 449px;*/
+    width: 412px;
     font-size: 1.5rem;
 }
 
@@ -220,7 +222,8 @@ nav li a:hover {
     font-weight: bold;
     font-size: 1.5rem;
     width: 200px;
-    left: 250px;
+    /*left: 250px;*/
+    left: 212px;
     position: relative;
 }
 
@@ -373,7 +376,8 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    /*padding-left: 50px;*/
+    padding-left: 30px;
     padding-bottom: 50px;
 }
 
