@@ -78,7 +78,8 @@ body {
 	display: grid;
     grid-template-columns: 1fr;
     /*max-width: 450px;*/
-    max-width: 400px;
+    /*max-width: 400px;*/
+    max-width: 412px;
     margin: 0 auto;
 }
 
