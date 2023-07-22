@@ -546,17 +546,6 @@ footer a:visited {
     color: var(--dark-gray);
 }
 
-@media screen and (max-width: 396px) {
-    body {
-        background-color: #499BD2;
-        max-width: 396px;
-    }
-
-    nav li a {
-        width: 396px;
-    }
-}
-
 /* -----------------  medium screens ----------------- */
 @media screen and (min-width: 768px) {
 
