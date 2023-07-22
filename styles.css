@@ -221,9 +221,10 @@ nav li a:hover {
     color: var(--black);
     font-weight: bold;
     font-size: 1.5rem;
-    width: 200px;
+    /*width: 200px;*/
     /*left: 250px;*/
-    left: 200px;
+    width: 150px;
+    left: 240px;
     position: relative;
 }
 
