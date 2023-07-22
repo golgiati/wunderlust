@@ -89,6 +89,10 @@ header a img {
     margin-bottom: 20px;
 }
 
+a {
+    color: var(--dark-gray);
+}
+
 /* hide content */
 #skip {
     position: absolute;
@@ -245,15 +249,18 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 
 /* style the images */
 #img-grid {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    gap: 10px;*/
+    display: flex;
+    flex-direction: column;
 }
 
 #img-grid img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 #img-grid picture {
@@ -526,13 +533,14 @@ footer a {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 1.2rem;
     padding-bottom: 5px;
+    color: var(--dark-gray);
 }
 
 footer a:visited {
     color: var(--dark-gray);
 }
 
-/* medium screens */
+/* -----------------  medium screens ----------------- */
 @media screen and (min-width: 768px) {
 
     body {
@@ -567,6 +575,8 @@ footer a:visited {
 
     header img {
         padding-top: 20px;
+        width: 140%;
+        height: auto;
     }
 
     header p {
@@ -624,7 +634,7 @@ footer a:visited {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 
     #img-grid img {
@@ -705,7 +715,7 @@ footer a:visited {
     }
 }
 
-/* large screens */
+/* ----------------- large screens ----------------- */
 @media screen and (min-width: 1920px) {
 
     body {
@@ -727,6 +737,11 @@ footer a:visited {
         padding: 0;
         padding-top: 120px;
         text-align: left;
+    }
+
+    header img {
+        width: 120%;
+        height: auto;
     }
 
     header nav {
@@ -796,6 +811,10 @@ footer a:visited {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+
+    .custom-select::after {
+        margin-left: 550px;
     }
 
     #contact legend {
