@@ -266,6 +266,11 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     background-color: var(--teal);
 }
 
+#plan section img {
+    width: 90%;
+    height: auto;
+}
+
 /* testimonials */
 #testimonials h3 {
     padding-top: 30px;
