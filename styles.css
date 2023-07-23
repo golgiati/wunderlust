@@ -395,7 +395,7 @@ input[type=email] {
     padding: 15px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid var()var(--light-gray);
+    border: 1px solid var(--light-gray);
     border-radius: 4px;
     box-sizing: border-box;
     border: 5px solid var(--purple);
