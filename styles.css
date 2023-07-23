@@ -1,7 +1,5 @@
 /* Gustavo Olgiati */
 
-@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
-
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -69,30 +67,76 @@ table {
     --select-arrow: var(--select-border);
 }
 
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
 * {
     box-sizing: border-box;
     line-height: 1.35;
 }
 
 body {
-	display: grid;
+    max-width: 350px;
+    display: grid;
     grid-template-columns: 1fr;
-    /*max-width: 450px;*/
-    /*max-width: 400px;*/
-    max-width: 412px;
     margin: 0 auto;
 }
 
 header {
-	background-image: linear-gradient(var(--teal), var(--white));
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.3rem;
+    background-image: linear-gradient(var(--teal), var(--white));
 }
 
-header a img {
-    margin-bottom: 20px;
+h1 {
+	font-family: Molle, Arial, sans-serif;
+	font-size: 3.5rem;
+    margin: 10px;
 }
 
-a {
-    color: var(--dark-gray);
+h2 {
+	font-family: Molle, Arial, sans-serif;
+	font-size: 3rem;
+}
+
+h3 {
+    font-family: Molle, Arial, sans-serif;
+	font-size: 2rem;
+}
+
+h4 {
+    font-family: Molle, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: Montserrat, Arial, sans-serif;
+	font-size: 1.2rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* hide content */
@@ -121,67 +165,10 @@ a {
 	overflow:hidden;
 }
 
-nav h2 {
-    display: none;
-}
-
-/* text */
-h4, p, q, small, nav, button, form {
-	font-family: Montserrat, Arial, sans-serif;
-}
-
-h1 {
-	font-family: Molle, Arial, sans-serif;
-	font-size: 4rem;
-}
-
-h2 {
-	font-family: Molle, Arial, sans-serif;
-	font-size: 3rem;
-}
-
-h3 {
-    font-family: Molle, Arial, sans-serif;
-	font-size: 3rem;
-}
-
-header {
-    display: grid;
-    /*grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);*/
-}
-
-header h1 {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    text-align: center;
-}
-
-header p {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    text-align: center;
-}
-
-header .logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-header h1, header p {
-    padding: 10px 30px;
-}
-
-header p {
-    line-height: 2;
-    padding: 0px 40px;
-    font-size: 1.3rem;
-}
-
-/* mobile menu */
+/* menu */
 nav {
-    grid-column: 2 / 4;
-    position: absolute;
+    position: relative;
+    grid-row: 2 / 3;
 }
 
 nav ul {
@@ -189,75 +176,51 @@ nav ul {
     clear: both;
     list-style: none;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
 }
 
 nav li a {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 15px;
     text-decoration: none;
     background-color: var(--teal);
-    color: var(--black);
+    border-bottom: solid 1px black;
+    color: var(--dark-gray);
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
-    border: 1px solid var(--dark-gray);
-    /*width: 449px;*/
-    width: 412px;
-    font-size: 1.5rem;
 }
 
 nav li a:hover {
-    color: #F2F2F2;
-}
-
-#logo {
-    z-index: 1;
-}
-
-#menu-toggle label {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-    padding: 20px 20px;
-    background-color: var(--yellow);
-    color: var(--black);
-    font-weight: bold;
-    font-size: 1.5rem;
-    /*width: 200px;*/
-    /*left: 250px;*/
-    width: 150px;
-    left: 240px;
-    position: relative;
-}
-
-#menu-toggle label:hover {
-    cursor: pointer;
-}
-
-#toggle {
-    display: none;
+    color: var(--light-gray)
 }
 
 nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     max-height: 700px;
 }
 
-/* end mobile menu */
-
-#intro h2, #intro p {
-    padding: 20px 30px;
+#menu-toggle label {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--yellow);
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
 }
 
-#intro p {
-    line-height: 2;
-    font-size: 1.2rem;
+#toggle {
+    display: none;
 }
 
-/* style the images */
+#menu-toggle label:hover {
+    cursor: pointer;
+}
+
+/* images */
 #img-grid {
-    /*display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;*/
     display: flex;
     flex-direction: column;
 }
@@ -268,10 +231,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     padding-bottom: 20px;
 }
 
-#img-grid picture {
-    padding-bottom: 20px;
-}
-
+/* plan your trip */
 #plan {
     background-color: var(--yellow);
     padding-bottom: 20px;
@@ -279,14 +239,18 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 }
 
 #plan h3 {
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 #plan h4 {
-    font-size: 2rem;
     font-weight: bold;
-    padding: 10px 0px;
+    margin: 0;
+    font-family: Montserrat, Arial, sans-serif;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 #plan section {
@@ -300,28 +264,30 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 
 /* testimonials */
 #testimonials h3 {
-    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0;
+    padding-left: 20px;
 }
 
 #testimonials section {
     text-align: center;
-    margin: 40px;
+    margin-bottom: 30px;
 }
 
 #testimonials h4 {
-    font-size: 3rem;
     font-weight: bold;
+    margin: 0;
+    font-family: Montserrat, Arial, sans-serif;
 }
 
 #testimonials p {
-    font-size: 2rem;
+    margin: 0;
 }
 
 #testimonials q {
-    font-size: 1.5rem;
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 /* about */
@@ -331,56 +297,33 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     grid-template-columns: repeat(1, 1fr);
 }
 
+#about h3 {
+    padding: 20px;
+    text-align: left;
+    margin: 0;
+}
+#about h4 {
+    margin: 0;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
 #about div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-#about section {
+    gap: 20px;
     text-align: center;
 }
 
-#about h3 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    text-align: center;
-    padding: 20px;
-}
-
-#about h4 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#about p {
-    font-size: 1.5rem;
-}
-
-#about section img {
+#about div img {
     width: 50%;
     height: 50%;
-}
-
-#contact h3 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.form-required {
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 1.5rem;
 }
 
 /* style the form */
 #contact form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*padding-left: 50px;*/
-    padding-left: 30px;
-    padding-bottom: 50px;
+    font-family: Montserrat, Arial, sans-serif;
 }
 
 #contact label {
@@ -388,14 +331,13 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     font-weight: bold;
 }
 
-#contact .required {
+.required {
     color: var(--purple);
 }
 
 input[type=text], select {
-    width: 350px;
     padding: 15px 20px;
-    margin: 8px 0;
+    width: 100%;
     display: inline-block;
     border: 1px solid var(--light-gray);
     border-radius: 4px;
@@ -414,10 +356,11 @@ input[type=text], select {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
+    border: none;
 }
 
 input[type=email] {
-    width: 350px;
+    width: 100%;
     padding: 15px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -429,7 +372,7 @@ input[type=email] {
 }
 
 input[type=tel] {
-    width: 350px;
+    width: 100%;
     padding: 15px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -447,8 +390,8 @@ input[type="radio"] {
     margin: 0;
     font: inherit;
     color: var(--purple);
-    width: 1.15em;
-    height: 1.15em;
+    width: 2em;
+    height: 2em;
     border: 0.15em solid var(--purple);
     border-radius: 50%;
     transform: translateY(1.8rem);
@@ -458,8 +401,8 @@ input[type="radio"] {
 
 input[type="radio"]::before {
     content: "";
-    width: 0.65em;
-    height: 0.65em;
+    width: 1.4em;
+    height: 1.4em;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
@@ -470,8 +413,13 @@ input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
+.radio-input {
+    align-items: baseline;
+}
+
 .radio-label {
-    margin-left: 35px;
+    margin-left: 60px;
+    font-weight: normal;
 }
 
 /* style the selects */
@@ -509,7 +457,7 @@ select, .custom-select:after {
     color: var(--white);
     padding: 20px 10px;
     font-weight: bold;
-    width: 350px;
+    width: 100%;
     text-decoration: none;
     margin-top: 20px;
     font-size: 1.5rem;
@@ -521,6 +469,7 @@ select, .custom-select:after {
 footer {
     padding-top: 20px;
     padding-bottom: 70px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -544,296 +493,4 @@ footer a {
 
 footer a:visited {
     color: var(--dark-gray);
-}
-
-/* -----------------  medium screens ----------------- */
-@media screen and (min-width: 768px) {
-
-    body {
-        max-width: 768px;
-    }
-
-    /* text */
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-
-    header {
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    header h1 {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-        padding-top: 40px;
-        text-align: left;
-    }
-
-    header img {
-        padding-top: 20px;
-        width: 140%;
-        height: auto;
-    }
-
-    header p {
-        /*grid-row: 2 / 3;
-        grid-column: 2 / 3;*/
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-        padding-top: 120px;
-    }
-
-    header nav {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-        position: relative;
-        padding-top: 30px;
-    }
-
-    header a {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    }
-
-    #menu-toggle label {
-        display: none;
-    }
-
-    header nav ul {
-        display: flex;
-        max-height: 20px;
-        overflow: visible;
-        padding-left: 10px;
-        padding-right: 10px;
-        justify-content: space-between;
-    }
-
-    header nav ul a {
-        padding: 20px;
-        text-decoration: none;
-        background-color: var(--white);
-        font-size: 1.2rem;
-        font-weight: bold;
-        max-width: 170px;
-        border: none;
-    }
-
-    header nav ul a:hover {
-        background-color: var(--yellow);
-    }
-
-    header nav ul a:visited {
-        color: var(--dark-gray);
-    }
-
-    #img-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    #img-grid img {
-        padding-bottom: 0px;
-    }
-
-    #img-grid picture {
-        grid-column: 1 / 3;
-    }
-
-    #plan div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    #plan h3 {
-        text-align: left;
-    }
-
-    #plan section {
-        margin: 10px;
-    }
-
-    #testimonials div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    #testimonials h3 {
-        text-align: left;
-    }
-
-    #testimonials section {
-        margin: 10px;
-        padding-bottom: 30px;
-    }
-
-    #about div {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 30px;
-    }
-
-    input[type=text], select, input[type=email], input[type=tel] {
-        width: 700px;
-    }
-    
-    #nums fieldset {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #contact form {
-        padding-left: 30px;
-    }
-
-    .custom-select::after {
-        margin-left: 650px;
-    }
-
-    #mySubmit {
-        margin-left: 350px;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 30px;
-    }
-
-    footer p {
-        padding-bottom: 0;
-    }
-}
-
-/* ----------------- large screens ----------------- */
-@media screen and (min-width: 1920px) {
-
-    body {
-        max-width: 1920px;
-    }
-
-    header {
-        grid-template-columns: 1fr 2fr 4fr;
-        grid-template-rows: 1fr;
-    }
-
-    header h1 {
-        text-align: left;
-        padding: 0;
-        padding-top: 50px;
-    }
-
-    header p {
-        padding: 0;
-        padding-top: 120px;
-        text-align: left;
-    }
-
-    header img {
-        width: 120%;
-        height: auto;
-    }
-
-    header nav {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
-
-    header nav ul {
-        justify-content: space-around;
-    }
-
-    header a img {
-        margin-bottom: 0;
-        padding-top: 40px;
-    }
-
-    #intro {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-
-    #intro p {
-        grid-column: 1 / 2;
-    }
-
-    #plan div {
-        display: flex;
-        justify-content: center;
-    }
-
-    #plan section {
-        padding: 50px;
-        margin: 50px;
-    }
-
-    #testimonials div {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    #about h3 {
-        text-align: left;
-    }
-
-    #about div {
-        justify-content: center;
-    }
-
-    #about div section {
-        margin: 20px;
-    }
-
-    #about div section img {
-        width: 100%;
-    }
-
-    #contact {
-        padding-top: 50px;
-    }
-
-    #contact h3 {
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    #contact form {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .custom-select::after {
-        margin-left: 550px;
-    }
-
-    #contact legend {
-        padding: 0;
-    }
-
-    input[type=text], select, input[type=email], input[type=tel] {
-        width: 600px;
-    }
-
-    #mySubmit {
-        margin-left: 250px;
-        margin-top: 40px;
-    }
-
 }
