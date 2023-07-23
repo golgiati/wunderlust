@@ -95,6 +95,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 350px;
     font-size: 1.3rem;
     background-image: linear-gradient(var(--teal), var(--white));
 }
@@ -136,7 +137,6 @@ header p {
 .logo {
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 
 /* hide content */
@@ -163,6 +163,10 @@ header p {
 	width:1px;
 	height:1px;
 	overflow:hidden;
+}
+
+#main-content {
+    max-width: 350px;
 }
 
 /* menu */
