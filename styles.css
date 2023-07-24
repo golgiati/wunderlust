@@ -134,6 +134,7 @@ h4 {
 
 p {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 	font-size: 1.2rem;
 }
 
@@ -216,6 +217,7 @@ nav li a {
     border-bottom: solid 1px var(--dark-gray);
     color: var(--dark-gray);
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -233,6 +235,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     padding: 20px;
     background-color: var(--yellow);
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -275,6 +278,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     font-weight: bold;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     padding-bottom: 10px;
     font-weight: bold;
 }
@@ -311,6 +315,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     font-weight: bold;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: normal;
 }
 
@@ -338,6 +343,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 #about h4 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 
 #about div {
@@ -367,6 +373,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 
 #contact label {
@@ -535,6 +542,7 @@ footer a {
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-size: 1.2rem;
     padding-bottom: 5px;
     color: var(--dark-gray);
