@@ -103,7 +103,8 @@ header {
 }
 
 h1 {
-	font-family: 'Molle', Arial, sans-serif;
+	/*font-family: 'Molle', Arial, sans-serif;*/
+    font-family: 'Molle', cursive;
 	font-size: 3.5rem;
     margin: 10px;
 }
