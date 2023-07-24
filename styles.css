@@ -85,6 +85,8 @@ table {
     line-height: 1.35;
 }
 
+
+/* ----------------- iphone screens ----------------- */
 body {
     max-width: 350px;
     display: grid;
@@ -132,8 +134,7 @@ header h1 {
 }
 
 header p {
-    margin: 20px 0;
-    padding: 0 30px;
+    margin: 20px 20px;
 }
 
 .logo {
@@ -203,7 +204,7 @@ nav li a {
     padding: 25px;
     text-decoration: none;
     background-color: var(--teal);
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--dark-gray);
     color: var(--dark-gray);
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
@@ -244,6 +245,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* plan your trip */
@@ -390,6 +392,12 @@ input[type=text], select {
     border: none;
 }
 
+#contact fieldset label {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
 input[type=email] {
     width: 100%;
     padding: 15px 20px;
@@ -449,8 +457,9 @@ input[type="radio"]:checked::before {
 }
 
 .radio-label {
-    margin-left: 60px;
     font-weight: normal;
+    padding-top: 35px;
+    padding-left: 20px;
 }
 
 /* style the selects */
@@ -649,6 +658,7 @@ footer a:visited {
 
     #plan section {
         margin: 30px;
+        padding: 30px;
     }
 
     #plan img {
@@ -819,15 +829,15 @@ footer a:visited {
 
     #contact fieldset {
         padding: 0;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     #names input {
-        margin: 10px 0;
+        margin: 15px 0;
     }
     .custom-select {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     input[type=text], select, input[type=email], input[type=tel] {
