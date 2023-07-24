@@ -112,22 +112,28 @@ h1 {
 }
 
 h2 {
-	font-family: 'Molle', Arial, sans-serif;
+	font-family: 'Molle', cursive;
+    font-style: italic;
+    font-weight: normal;
 	font-size: 3rem;
 }
 
 h3 {
-    font-family: 'Molle', Arial, sans-serif;
+    font-family: 'Molle', cursive;
+    font-style: italic;
+    font-weight: normal;
 	font-size: 2rem;
 }
 
 h4 {
-    font-family: 'Molle', Arial, sans-serif;
+    font-family: 'Molle', cursive;
+    font-style: italic;
+    font-weight: normal;
     font-size: 1.5rem;
 }
 
 p {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 }
 
@@ -209,7 +215,7 @@ nav li a {
     background-color: var(--teal);
     border-bottom: solid 1px var(--dark-gray);
     color: var(--dark-gray);
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -226,7 +232,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     justify-content: center;
     padding: 20px;
     background-color: var(--yellow);
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -268,7 +274,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 #plan h4 {
     font-weight: bold;
     margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-bottom: 10px;
     font-weight: bold;
 }
@@ -304,7 +310,8 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 #testimonials h4 {
     font-weight: bold;
     margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 #testimonials p {
@@ -330,7 +337,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 }
 #about h4 {
     margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #about div {
@@ -351,7 +358,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 }
 
 .form-required {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: italic;
 }
@@ -359,7 +366,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 #contact form {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #contact label {
@@ -527,7 +534,7 @@ footer p {
 footer a {
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     padding-bottom: 5px;
     color: var(--dark-gray);
