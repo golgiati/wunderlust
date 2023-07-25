@@ -582,7 +582,6 @@ footer a:visited {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         position: absolute;
-        margin-left: 300px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         justify-self: end;
