@@ -603,7 +603,7 @@ footer a:visited {
 
     nav li a {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         padding: 25px;
         text-decoration: none;
         background-color: var(--teal);
@@ -631,7 +631,7 @@ footer a:visited {
         font-style: normal;
         font-weight: bold;
         width: 200px;
-        margin-left: 300px;
+        margin-left: 250px;
         margin-top: 60px;
     }
 
@@ -735,6 +735,7 @@ footer a:visited {
     header nav ul a {
         padding: 20px;
         text-decoration: none;
+        justify-content: center;
         background-color: var(--white);
         font-size: 1.2rem;
         font-weight: bold;
