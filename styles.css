@@ -105,7 +105,7 @@ table {
 
 /* ----------------- iphone screens ----------------- */
 body {
-    max-width: 350px;
+    max-width: 320px;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -114,7 +114,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 350px;
+    max-width: 320px;
     font-size: 1.3rem;
     background-image: linear-gradient(var(--teal), var(--white));
 }
@@ -124,7 +124,7 @@ h1 {
     font-family: 'Molle', cursive;
     font-style: italic;
     font-weight: normal;
-	font-size: 3.5rem;
+	font-size: 3rem;
     margin: 20px;
 }
 
@@ -132,14 +132,14 @@ h2 {
 	font-family: 'Molle', cursive;
     font-style: italic;
     font-weight: normal;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 h3 {
     font-family: 'Molle', cursive;
     font-style: italic;
     font-weight: normal;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 h4 {
@@ -198,7 +198,7 @@ header p {
 }
 
 #main-content {
-    max-width: 350px;
+    max-width: 320px;
 }
 
 #main-content h2{
@@ -239,6 +239,7 @@ nav li a {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
+    width: 100%;
 }
 
 nav li a:hover {
@@ -258,6 +259,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
+    width: 320px;
 }
 
 #toggle {
@@ -374,8 +376,11 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 #about div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
     text-align: center;
+}
+
+#about p {
+    margin: 0;
 }
 
 #about div img {
@@ -526,7 +531,7 @@ select::-ms-expand {
     height: 0.5em;
     background-color: var(--select-arrow);
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-    margin-left: 320px;
+    margin-left: 280px;
 }
 
 select, .custom-select:after {
@@ -586,6 +591,20 @@ footer a:visited {
 
     header h1 {
         margin: 20px;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    #main-content h2 {
+        font-size: 4rem;
+    }
+
+    #main-content h3 {
+        font-size: 3rem;
+    }
+
+    #main-content h4 {
+        font-size: 2rem;
     }
 
     header p {
@@ -596,6 +615,10 @@ footer a:visited {
         width: 60%;
         height: auto;
         position: relative;
+    }
+
+    nav li a {
+        width: 100%;
     }
 
     #menu-toggle label {
@@ -812,6 +835,10 @@ footer a:visited {
     input[type=text], select, input[type=email], input[type=tel] {
         width: 700px;
     }
+
+    #contact h3 {
+        padding-left: 20px;
+    }
     
     #nums fieldset {
         flex-direction: row;
@@ -919,7 +946,11 @@ footer a:visited {
     }
 
     #about div section {
-        margin: 20px;
+        margin: 50px;
+    }
+
+    #about div section p {
+        font-size: 1.5rem;
     }
 
     #about div section img {
