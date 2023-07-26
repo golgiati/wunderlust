@@ -85,6 +85,24 @@ table {
     line-height: 1.35;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--dark-gray);
+        }
+
+    #main-content {
+        color: var(--light-gray);
+    }
+
+    #plan {
+        color: var(--dark-gray);
+    }
+
+    #about h3, #about h4 {
+        color: var(--dark-gray);
+    }
+  }
+
 
 /* ----------------- iphone screens ----------------- */
 body {
