@@ -103,7 +103,6 @@ table {
     }
   }
 
-
 /* ----------------- iphone screens ----------------- */
 body {
     max-width: 350px;
@@ -304,7 +303,7 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-weight: bold;
 }
 
