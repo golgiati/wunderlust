@@ -598,6 +598,10 @@ footer a:visited {
         margin: 20px;
     }
 
+    .custom-select::after {
+        margin-left: 400px;
+    }
+
 }
 
 /* -----------------  medium screens ----------------- */
