@@ -85,6 +85,7 @@ table {
     line-height: 1.35;
 }
 
+/* ----------- dark mode ---------------------- */
 @media screen and (prefers-color-scheme: dark) {
     body {
       background-color: var(--dark-gray);
@@ -233,8 +234,6 @@ nav li a {
     text-decoration: none;
     background-color: var(--teal);
     border-bottom: solid 1px var(--dark-gray);
-    border-left: 1px solid var(--dark-gray);
-    border-right: 1px solid var(--dark-gray);
     color: var(--dark-gray);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
