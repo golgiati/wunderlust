@@ -190,12 +190,12 @@ header p {
   }
 
 .sr-only {
-	position:absolute;
-	left:-10000px;
-	top:auto;
-	width:1px;
-	height:1px;
-	overflow:hidden;
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
 #main-content {
@@ -248,6 +248,7 @@ nav li a:hover {
 
 nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
     max-height: 700px;
+    transition: max-height 0.5s ease-out;
 }
 
 #menu-toggle label {
@@ -262,7 +263,8 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 }
 
 #toggle {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
 }
 
 #menu-toggle label:hover {
@@ -271,6 +273,18 @@ nav #toggle:checked ~ ul, nav #toggle:checked ~ label {
 
 .active {
     border-top: 1px solid black;
+}
+
+/* highligth the menu with tab */
+#toggle:focus ~ label {
+    outline: 2px solid white;
+    outline: auto;
+}
+ 
+@supports selector(:focus-visible) {
+    #toggle:not(:focus-visible) ~ label {
+    outline: none;
+    }
 }
 
 /* images */
